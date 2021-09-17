@@ -2,6 +2,9 @@ Sugar Meter Flutter Project
 
 Implementation of an App using Firebase as its database manager and featuring the use of Blocs for state management and Navigation Routes
 
+
+An user will save the ammount of times they've eaten things containing sugar and will be able to see their history, the purpose is to raise awareness of how much sugar they consume in the long term. I'm not looking for numbers! I'm trying to save at least one from the sugar rush!! and hoping to help developers in their way ;)
+
 Feel Free to use this code in your own apps!
 
 ------
