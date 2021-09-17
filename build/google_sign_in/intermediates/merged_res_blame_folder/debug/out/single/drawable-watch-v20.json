@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/carlos/sugar-meter-flutter/build/google_sign_in/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/carlos/.gradle/caches/transforms-2/files-2.1/3a038e84afcc8a8aaab0f4f71255d94f/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/Users/carlos/sugar-meter-flutter/build/google_sign_in/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/carlos/.gradle/caches/transforms-2/files-2.1/3a038e84afcc8a8aaab0f4f71255d94f/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/carlos/sugar-meter-flutter/build/google_sign_in/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/carlos/.gradle/caches/transforms-2/files-2.1/3a038e84afcc8a8aaab0f4f71255d94f/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    }
+]
