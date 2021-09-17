@@ -1,4 +1,0 @@
-io/flutter/plugins/GeneratedPluginRegistrant.java
- io.flutter.plugins.GeneratedPluginRegistrant
-com/casareafer/sugar_meter/BuildConfig.java
- com.casareafer.sugar_meter.BuildConfig
