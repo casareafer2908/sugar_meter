@@ -6,6 +6,8 @@ import 'package:sugar_meter/src/ui/common_widgets/sign_in_button.dart';
 import 'package:sugar_meter/src/ui/common_widgets/social_sign_in_button.dart';
 
 class SignInPage extends StatelessWidget {
+  const SignInPage({Key key}) : super(key: key);
+
   static Widget create() {
     return BlocListener<AuthCubit, AuthState>(
       listener: (context, state) {
@@ -13,7 +15,7 @@ class SignInPage extends StatelessWidget {
           Navigator.pushNamedAndRemoveUntil(context, Routes.home, (r) => false);
         }
       },
-      child: SignInPage(),
+      child: const SignInPage(),
     );
   }
 
@@ -21,7 +23,7 @@ class SignInPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sugar meter'),
+        title: const Text('Sugar meter'),
         elevation: 2,
       ),
       body: _buildContent(context),
@@ -33,12 +35,12 @@ class SignInPage extends StatelessWidget {
       builder: (context, state) {
         if (state is AuthSignedOut) {
           return Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Text(
+                const Text(
                   'Sign In',
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -46,7 +48,7 @@ class SignInPage extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                SizedBox(height: 48.0),
+                const SizedBox(height: 48.0),
                 SocialSignInButton(
                   assetName: 'assets/images/google-logo.png',
                   text: 'Sign in with Google',
@@ -54,24 +56,25 @@ class SignInPage extends StatelessWidget {
                   textColor: Colors.black87,
                   onPressed: () => context.read<AuthCubit>().signInWithGoogle(),
                 ),
-                SizedBox(height: 8.0), //space between widgets
+                const SizedBox(height: 8.0), //space between widgets
                 SocialSignInButton(
                   assetName: 'assets/images/facebook-logo.png',
                   text: 'Sign in with Facebook',
-                  color: Color(0xFF334D92),
+                  color: const Color(0xFF334D92),
                   textColor: Colors.white,
                   onPressed: () =>
                       context.read<AuthCubit>().signInWithFacebook(),
                 ),
-                SizedBox(height: 8.0), //space between widgets
+                const SizedBox(height: 8.0), //space between widgets
                 SignInButton(
                   text: 'Sign in with email',
                   color: Colors.teal[700],
                   textColor: Colors.white,
-                  onPressed: () => print("TODO"),
+                  //TODO: implement Email and pass sign-in
+                  onPressed: () {},
                 ),
-                SizedBox(height: 8.0),
-                Text(
+                const SizedBox(height: 8.0),
+                const Text(
                   'or',
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -79,7 +82,7 @@ class SignInPage extends StatelessWidget {
                     color: Colors.black87,
                   ),
                 ),
-                SizedBox(height: 8.0), //space between widgets
+                const SizedBox(height: 8.0), //space between widgets
                 SignInButton(
                   text: 'Go Anonymous',
                   color: Colors.lime[300],
@@ -91,7 +94,7 @@ class SignInPage extends StatelessWidget {
             ),
           );
         }
-        return Center(child: CircularProgressIndicator());
+        return const Center(child: CircularProgressIndicator());
       },
     );
   }

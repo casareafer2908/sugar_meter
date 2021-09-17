@@ -4,6 +4,8 @@ import 'package:sugar_meter/src/core/cubit/auth_cubit.dart';
 import 'package:sugar_meter/src/navigation/routes.dart';
 
 class SplashScreen extends StatelessWidget {
+  const SplashScreen({Key key}) : super(key: key);
+
   static Widget create() {
     //Listener of Auth sTate streams
     return BlocListener<AuthCubit, AuthState>(
@@ -17,13 +19,13 @@ class SplashScreen extends StatelessWidget {
           Navigator.pushNamedAndRemoveUntil(context, Routes.home, (r) => false);
         }
       },
-      child: SplashScreen(),
+      child: const SplashScreen(),
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(child: CircularProgressIndicator()),
     );
   }

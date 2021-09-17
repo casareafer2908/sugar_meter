@@ -1,6 +1,5 @@
 import 'dart:async';
 
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sugar_meter/src/core/auth_repository/auth_repository_base.dart';
 import 'package:sugar_meter/src/core/auth_repository/user_model.dart';

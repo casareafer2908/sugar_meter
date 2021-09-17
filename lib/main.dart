@@ -15,6 +15,6 @@ void main() async {
     providers: [
       BlocProvider(create: (_) => AuthCubit(_authRepo)),
     ],
-    child: MyApp(),
+    child: const MyApp(),
   ));
 }

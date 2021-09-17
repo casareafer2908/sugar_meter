@@ -3,6 +3,7 @@ import 'package:sugar_meter/src/ui/common_widgets/custom_raised_button.dart';
 
 class SocialSignInButton extends CustomRaisedButton {
   SocialSignInButton({
+    Key key,
     @required String assetName,
     @required String text,
     Color color,
@@ -11,6 +12,7 @@ class SocialSignInButton extends CustomRaisedButton {
   })  : assert(assetName != null),
         assert(text != null),
         super(
+          key: key,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[

@@ -3,12 +3,14 @@ import 'package:sugar_meter/src/ui/common_widgets/custom_raised_button.dart';
 
 class SignInButton extends CustomRaisedButton {
   SignInButton({
-    String text,
+    Key key,
+    @required String text,
     Color color,
     Color textColor,
     VoidCallback onPressed,
   })  : assert(text != null),
         super(
+          key: key,
           child: Text(text,
               style: TextStyle(
                 color: textColor,
