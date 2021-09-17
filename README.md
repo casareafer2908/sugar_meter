@@ -12,7 +12,7 @@ Feel Free to use this code in your own apps!
 To build the app you need to create your own firebase project, add an app and generate your own google-services.json/GoogleService-Info.plist 
 
 
-Firebase is shows a pretty straightforward steps list when you create your own firebase app:
+Firebase shows a pretty straightforward steps list when you create your own firebase app:
 https://support.google.com/firebase/answer/7015592?hl=en#zippy=%2Cin-this-article
 
 ------
